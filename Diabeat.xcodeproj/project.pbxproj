@@ -1,0 +1,532 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		020D022F291AA88400E9950A /* DiabeatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D022E291AA88400E9950A /* DiabeatApp.swift */; };
+		020D0233291AA88600E9950A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 020D0232291AA88600E9950A /* Assets.xcassets */; };
+		020D0236291AA88600E9950A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 020D0235291AA88600E9950A /* Preview Assets.xcassets */; };
+		020D0252291AA8C600E9950A /* Classification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D023D291AA8C600E9950A /* Classification.swift */; };
+		020D0253291AA8C600E9950A /* ClassificationBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D023E291AA8C600E9950A /* ClassificationBean.swift */; };
+		020D0254291AA8C600E9950A /* ClassificationVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D023F291AA8C600E9950A /* ClassificationVO.swift */; };
+		020D0256291AA8C600E9950A /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D0242291AA8C600E9950A /* CreateView.swift */; };
+		020D0257291AA8C600E9950A /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D0243291AA8C600E9950A /* ListView.swift */; };
+		020D0258291AA8C600E9950A /* ClassifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D0244291AA8C600E9950A /* ClassifyView.swift */; };
+		020D0259291AA8C600E9950A /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D0245291AA8C600E9950A /* ListRowView.swift */; };
+		020D025A291AA8C600E9950A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D0246291AA8C600E9950A /* MainView.swift */; };
+		020D025B291AA8C600E9950A /* FirebaseDbi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D0248291AA8C600E9950A /* FirebaseDbi.swift */; };
+		020D025C291AA8C600E9950A /* ClassificationDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D0249291AA8C600E9950A /* ClassificationDAO.swift */; };
+		020D025D291AA8C600E9950A /* ModelParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D024B291AA8C600E9950A /* ModelParser.swift */; };
+		020D025F291AA8C600E9950A /* OclType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D024E291AA8C600E9950A /* OclType.swift */; };
+		020D0260291AA8C600E9950A /* FileAccessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D024F291AA8C600E9950A /* FileAccessor.swift */; };
+		020D0261291AA8C600E9950A /* Ocl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D0250291AA8C600E9950A /* Ocl.swift */; };
+		020D0262291AA8C600E9950A /* OclFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D0251291AA8C600E9950A /* OclFile.swift */; };
+		020D0264291ACBDC00E9950A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 020D0263291ACBDC00E9950A /* GoogleService-Info.plist */; };
+		020D0266291ADAC700E9950A /* Diabetes_model_8F.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 020D0265291ADABD00E9950A /* Diabetes_model_8F.tflite */; };
+		020D026A291ADE6A00E9950A /* ClassificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D0268291ADE6A00E9950A /* ClassificationViewModel.swift */; };
+		020D026B291ADE6A00E9950A /* CRUDViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 020D0269291ADE6A00E9950A /* CRUDViewModel.swift */; };
+		558912712984AE3012F384A3 /* Pods_Diabeat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774E980DE66602AF45EF4865 /* Pods_Diabeat.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		020D022B291AA88400E9950A /* Diabeat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diabeat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		020D022E291AA88400E9950A /* DiabeatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiabeatApp.swift; sourceTree = "<group>"; };
+		020D0232291AA88600E9950A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		020D0235291AA88600E9950A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		020D023D291AA8C600E9950A /* Classification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Classification.swift; sourceTree = "<group>"; };
+		020D023E291AA8C600E9950A /* ClassificationBean.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationBean.swift; sourceTree = "<group>"; };
+		020D023F291AA8C600E9950A /* ClassificationVO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationVO.swift; sourceTree = "<group>"; };
+		020D0242291AA8C600E9950A /* CreateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
+		020D0243291AA8C600E9950A /* ListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		020D0244291AA8C600E9950A /* ClassifyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassifyView.swift; sourceTree = "<group>"; };
+		020D0245291AA8C600E9950A /* ListRowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
+		020D0246291AA8C600E9950A /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		020D0248291AA8C600E9950A /* FirebaseDbi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseDbi.swift; sourceTree = "<group>"; };
+		020D0249291AA8C600E9950A /* ClassificationDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationDAO.swift; sourceTree = "<group>"; };
+		020D024B291AA8C600E9950A /* ModelParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelParser.swift; sourceTree = "<group>"; };
+		020D024E291AA8C600E9950A /* OclType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OclType.swift; sourceTree = "<group>"; };
+		020D024F291AA8C600E9950A /* FileAccessor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileAccessor.swift; sourceTree = "<group>"; };
+		020D0250291AA8C600E9950A /* Ocl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ocl.swift; sourceTree = "<group>"; };
+		020D0251291AA8C600E9950A /* OclFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OclFile.swift; sourceTree = "<group>"; };
+		020D0263291ACBDC00E9950A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		020D0265291ADABD00E9950A /* Diabetes_model_8F.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Diabetes_model_8F.tflite; sourceTree = "<group>"; };
+		020D0268291ADE6A00E9950A /* ClassificationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificationViewModel.swift; sourceTree = "<group>"; };
+		020D0269291ADE6A00E9950A /* CRUDViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CRUDViewModel.swift; sourceTree = "<group>"; };
+		25C88ADECAFFE0C3AF0EE7E5 /* Pods-Diabeat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diabeat.debug.xcconfig"; path = "Target Support Files/Pods-Diabeat/Pods-Diabeat.debug.xcconfig"; sourceTree = "<group>"; };
+		774E980DE66602AF45EF4865 /* Pods_Diabeat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diabeat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		841E1931D0B925AA806B35A3 /* Pods-Diabeat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diabeat.release.xcconfig"; path = "Target Support Files/Pods-Diabeat/Pods-Diabeat.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		020D0228291AA88400E9950A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				558912712984AE3012F384A3 /* Pods_Diabeat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		020D0222291AA88400E9950A = {
+			isa = PBXGroup;
+			children = (
+				020D022D291AA88400E9950A /* Diabeat */,
+				020D022C291AA88400E9950A /* Products */,
+				5C15535534E58B43300793DD /* Pods */,
+				D27E976800FE62B5993F28BC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		020D022C291AA88400E9950A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				020D022B291AA88400E9950A /* Diabeat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		020D022D291AA88400E9950A /* Diabeat */ = {
+			isa = PBXGroup;
+			children = (
+				020D022E291AA88400E9950A /* DiabeatApp.swift */,
+				020D0247291AA8C600E9950A /* cloud Database */,
+				020D024D291AA8C600E9950A /* helper */,
+				020D024A291AA8C600E9950A /* ML Model */,
+				020D023C291AA8C600E9950A /* model */,
+				020D0241291AA8C600E9950A /* views */,
+				020D0267291ADE6A00E9950A /* ViewModel */,
+				020D0263291ACBDC00E9950A /* GoogleService-Info.plist */,
+				020D0232291AA88600E9950A /* Assets.xcassets */,
+				020D0234291AA88600E9950A /* Preview Content */,
+			);
+			path = Diabeat;
+			sourceTree = "<group>";
+		};
+		020D0234291AA88600E9950A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				020D0235291AA88600E9950A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		020D023C291AA8C600E9950A /* model */ = {
+			isa = PBXGroup;
+			children = (
+				020D023D291AA8C600E9950A /* Classification.swift */,
+				020D023E291AA8C600E9950A /* ClassificationBean.swift */,
+				020D023F291AA8C600E9950A /* ClassificationVO.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		020D0241291AA8C600E9950A /* views */ = {
+			isa = PBXGroup;
+			children = (
+				020D0242291AA8C600E9950A /* CreateView.swift */,
+				020D0243291AA8C600E9950A /* ListView.swift */,
+				020D0244291AA8C600E9950A /* ClassifyView.swift */,
+				020D0245291AA8C600E9950A /* ListRowView.swift */,
+				020D0246291AA8C600E9950A /* MainView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		020D0247291AA8C600E9950A /* cloud Database */ = {
+			isa = PBXGroup;
+			children = (
+				020D0248291AA8C600E9950A /* FirebaseDbi.swift */,
+				020D0249291AA8C600E9950A /* ClassificationDAO.swift */,
+			);
+			path = "cloud Database";
+			sourceTree = "<group>";
+		};
+		020D024A291AA8C600E9950A /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				020D024B291AA8C600E9950A /* ModelParser.swift */,
+				020D0265291ADABD00E9950A /* Diabetes_model_8F.tflite */,
+			);
+			path = "ML Model";
+			sourceTree = "<group>";
+		};
+		020D024D291AA8C600E9950A /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				020D024E291AA8C600E9950A /* OclType.swift */,
+				020D024F291AA8C600E9950A /* FileAccessor.swift */,
+				020D0250291AA8C600E9950A /* Ocl.swift */,
+				020D0251291AA8C600E9950A /* OclFile.swift */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		020D0267291ADE6A00E9950A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				020D0268291ADE6A00E9950A /* ClassificationViewModel.swift */,
+				020D0269291ADE6A00E9950A /* CRUDViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5C15535534E58B43300793DD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				25C88ADECAFFE0C3AF0EE7E5 /* Pods-Diabeat.debug.xcconfig */,
+				841E1931D0B925AA806B35A3 /* Pods-Diabeat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D27E976800FE62B5993F28BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				774E980DE66602AF45EF4865 /* Pods_Diabeat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		020D022A291AA88400E9950A /* Diabeat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 020D0239291AA88600E9950A /* Build configuration list for PBXNativeTarget "Diabeat" */;
+			buildPhases = (
+				780A45D0F5E62D3FC3A55F9D /* [CP] Check Pods Manifest.lock */,
+				020D0227291AA88400E9950A /* Sources */,
+				020D0228291AA88400E9950A /* Frameworks */,
+				020D0229291AA88400E9950A /* Resources */,
+				6E8A774847C64BA9C53E480C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Diabeat;
+			productName = Diabeat;
+			productReference = 020D022B291AA88400E9950A /* Diabeat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		020D0223291AA88400E9950A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					020D022A291AA88400E9950A = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 020D0226291AA88400E9950A /* Build configuration list for PBXProject "Diabeat" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 020D0222291AA88400E9950A;
+			productRefGroup = 020D022C291AA88400E9950A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				020D022A291AA88400E9950A /* Diabeat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		020D0229291AA88400E9950A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020D0266291ADAC700E9950A /* Diabetes_model_8F.tflite in Resources */,
+				020D0236291AA88600E9950A /* Preview Assets.xcassets in Resources */,
+				020D0264291ACBDC00E9950A /* GoogleService-Info.plist in Resources */,
+				020D0233291AA88600E9950A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E8A774847C64BA9C53E480C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diabeat/Pods-Diabeat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diabeat/Pods-Diabeat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Diabeat/Pods-Diabeat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		780A45D0F5E62D3FC3A55F9D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Diabeat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		020D0227291AA88400E9950A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020D0260291AA8C600E9950A /* FileAccessor.swift in Sources */,
+				020D0257291AA8C600E9950A /* ListView.swift in Sources */,
+				020D0254291AA8C600E9950A /* ClassificationVO.swift in Sources */,
+				020D0253291AA8C600E9950A /* ClassificationBean.swift in Sources */,
+				020D025D291AA8C600E9950A /* ModelParser.swift in Sources */,
+				020D022F291AA88400E9950A /* DiabeatApp.swift in Sources */,
+				020D025F291AA8C600E9950A /* OclType.swift in Sources */,
+				020D026B291ADE6A00E9950A /* CRUDViewModel.swift in Sources */,
+				020D0258291AA8C600E9950A /* ClassifyView.swift in Sources */,
+				020D0256291AA8C600E9950A /* CreateView.swift in Sources */,
+				020D025A291AA8C600E9950A /* MainView.swift in Sources */,
+				020D026A291ADE6A00E9950A /* ClassificationViewModel.swift in Sources */,
+				020D025B291AA8C600E9950A /* FirebaseDbi.swift in Sources */,
+				020D0259291AA8C600E9950A /* ListRowView.swift in Sources */,
+				020D0252291AA8C600E9950A /* Classification.swift in Sources */,
+				020D0262291AA8C600E9950A /* OclFile.swift in Sources */,
+				020D025C291AA8C600E9950A /* ClassificationDAO.swift in Sources */,
+				020D0261291AA8C600E9950A /* Ocl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		020D0237291AA88600E9950A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		020D0238291AA88600E9950A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		020D023A291AA88600E9950A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C88ADECAFFE0C3AF0EE7E5 /* Pods-Diabeat.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Diabeat/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyanalwakeel.Diabeat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		020D023B291AA88600E9950A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 841E1931D0B925AA806B35A3 /* Pods-Diabeat.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Diabeat/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyanalwakeel.Diabeat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		020D0226291AA88400E9950A /* Build configuration list for PBXProject "Diabeat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020D0237291AA88600E9950A /* Debug */,
+				020D0238291AA88600E9950A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		020D0239291AA88600E9950A /* Build configuration list for PBXNativeTarget "Diabeat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				020D023A291AA88600E9950A /* Debug */,
+				020D023B291AA88600E9950A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 020D0223291AA88400E9950A /* Project object */;
+}

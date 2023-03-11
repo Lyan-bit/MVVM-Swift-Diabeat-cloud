@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>196101848336-p4pk1ihch2uck7m3ge8qj501a05b34r1.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.196101848336-p4pk1ihch2uck7m3ge8qj501a05b34r1</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDGg77xah7k2cq0GT5kWXu15Alktbh5OcI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>196101848336</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.lyanalwakeel.Diabeat</string>
+	<key>PROJECT_ID</key>
+	<string>diabeat-d463b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>diabeat-d463b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:196101848336:ios:1871297d0dc67cf3e8b995</string>
+	<key>DATABASE_URL</key>
+	<string>https://diabeat-d463b-default-rtdb.firebaseio.com</string>
+</dict>
+</plist>
