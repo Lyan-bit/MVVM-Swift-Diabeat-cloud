@@ -12,80 +12,6 @@ import SwiftUI
 import CoreLocation
 
 
-/* This code requires OclFile.swift */
-
-func initialiseOclFile()
-{ createByPKOclFile(key: "System.in")
-  createByPKOclFile(key: "System.out")
-  createByPKOclFile(key: "System.err")
-}
-
-
-/* This metatype code requires OclType.swift */
-
-func initialiseOclType()
-{ let intOclType = createByPKOclType(key: "int")
-  intOclType.actualMetatype = Int.self
-  let doubleOclType = createByPKOclType(key: "double")
-  doubleOclType.actualMetatype = Double.self
-  let longOclType = createByPKOclType(key: "long")
-  longOclType.actualMetatype = Int64.self
-  let stringOclType = createByPKOclType(key: "String")
-  stringOclType.actualMetatype = String.self
-  let sequenceOclType = createByPKOclType(key: "Sequence")
-  sequenceOclType.actualMetatype = type(of: [])
-  let anyset : Set<AnyHashable> = Set<AnyHashable>()
-  let setOclType = createByPKOclType(key: "Set")
-  setOclType.actualMetatype = type(of: anyset)
-  let mapOclType = createByPKOclType(key: "Map")
-  mapOclType.actualMetatype = type(of: [:])
-  let voidOclType = createByPKOclType(key: "void")
-  voidOclType.actualMetatype = Void.self
-
-  let classificationOclType = createByPKOclType(key: "Diabeat")
-    classificationOclType.actualMetatype = Classification.self
-
-    let classificationPregnancies = createOclAttribute()
-        classificationPregnancies.name = "pregnancies"
-        classificationPregnancies.type = stringOclType
-        classificationOclType.attributes.append(classificationPregnancies)
-    let classificationGlucose = createOclAttribute()
-        classificationGlucose.name = "glucose"
-        classificationGlucose.type = stringOclType
-        classificationOclType.attributes.append(classificationGlucose)
-    let classificationBloodPressure = createOclAttribute()
-        classificationBloodPressure.name = "bloodPressure"
-        classificationBloodPressure.type = intOclType
-        classificationOclType.attributes.append(classificationBloodPressure)
-    let classificationSkinThickness = createOclAttribute()
-        classificationSkinThickness.name = "skinThickness"
-        classificationSkinThickness.type = stringOclType
-        classificationOclType.attributes.append(classificationSkinThickness)
-    let classificationInsulin = createOclAttribute()
-        classificationInsulin.name = "insulin"
-        classificationInsulin.type = intOclType
-        classificationOclType.attributes.append(classificationInsulin)
-    let classificationBmi = createOclAttribute()
-        classificationBmi.name = "bmi"
-        classificationBmi.type = intOclType
-        classificationOclType.attributes.append(classificationBmi)
-    let classificationDiabetesPedigree = createOclAttribute()
-        classificationDiabetesPedigree.name = "diabetesPedigree"
-        classificationDiabetesPedigree.type = intOclType
-        classificationOclType.attributes.append(classificationDiabetesPedigree)
-    let classificationAge = createOclAttribute()
-        classificationAge.name = "age"
-        classificationAge.type = stringOclType
-        classificationOclType.attributes.append(classificationAge)
-    let classificationResult = createOclAttribute()
-        classificationResult.name = "result"
-        classificationResult.type = stringOclType
-        classificationOclType.attributes.append(classificationResult)
-    let classificationId = createOclAttribute()
-        classificationId.name = "id"
-        classificationId.type = stringOclType
-        classificationOclType.attributes.append(classificationId)
-}
 
 func instanceFromJSON(typeName: String, json: String) -> AnyObject?
 { let jdata = json.data(using: .utf8)!
@@ -110,8 +36,6 @@ class CRUDViewModel : ObservableObject {
   static func getInstance() -> CRUDViewModel
   { if instance == nil
     { instance = CRUDViewModel()
-      initialiseOclFile()
-      initialiseOclType()
     }
     return instance!
   }
